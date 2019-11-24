@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".careerpath.CareerPathFragment">
+
+    <TextView
+        android:id="@+id/textView_career_path_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Career path"
+        android:textAlignment="center"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_career_path_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:text="Choose a career that you would love to follow:"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_career_path_title" />
+
+    <Button
+        android:id="@+id/textView_engineer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorAccent"
+        android:bottomLeftRadius="40dp"
+        android:bottomRightRadius="40dp"
+        android:text="Engineer (60%)"
+        android:textAlignment="center"
+        android:textColor="#FFFF00"
+        android:textSize="20sp"
+        android:topLeftRadius="40dp"
+        android:topRightRadius="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_career_path_question" />
+
+    <Button
+        android:id="@+id/textView_vet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorAccent"
+        android:bottomLeftRadius="40dp"
+        android:bottomRightRadius="40dp"
+        android:text="Vet (30%)"
+        android:textAlignment="center"
+        android:textColor="#FFFF00"
+        android:textSize="20sp"
+        android:topLeftRadius="40dp"
+        android:topRightRadius="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_engineer" />
+
+    <Button
+        android:id="@+id/textView_firefighter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="164dp"
+        android:background="@color/colorAccent"
+        android:bottomLeftRadius="40dp"
+        android:bottomRightRadius="40dp"
+        android:text="Firefighter (10%)"
+        android:textAlignment="center"
+        android:textColor="#FFFF00"
+        android:textSize="20sp"
+        android:topLeftRadius="40dp"
+        android:topRightRadius="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_vet" />
+
+    <ImageView
+        android:id="@+id/imageView_tick"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_done"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_career_path_question" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
