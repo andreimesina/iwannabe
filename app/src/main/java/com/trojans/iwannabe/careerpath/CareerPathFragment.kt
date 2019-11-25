@@ -1,10 +1,8 @@
 package com.trojans.iwannabe.careerpath
 
-import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewAnimationUtils
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
@@ -54,7 +52,8 @@ class CareerPathFragment : Fragment() {
     }
 
     private fun setHighschoolTexts() {
-        question.text = "Choose a highschool profile from the following to find out what's the next step:"
+        question.text =
+            "Choose a highschool profile from the following to find out what's the next step:"
         firstBtn.text = "Mathematics and CS (60%)"
         secondBtn.text = "Natural Sciences (30%)"
         thirdBtn.text = "Sports and PE (10%)"
@@ -72,35 +71,11 @@ class CareerPathFragment : Fragment() {
     }
 
     private fun setFinishTexts() {
-        question.text = "Congratulations! You have been matched with the groups that fit your career path the best!"
+        question.text =
+            "Congratulations! You have been matched with the groups that fit your career path the best!"
         firstBtn.visibility = View.GONE
         secondBtn.visibility = View.GONE
         thirdBtn.visibility = View.GONE
         tick.visibility = View.VISIBLE
-//        animateTick()
-    }
-
-    private fun animateTick() {
-        tick.post {
-            // Check if the runtime version is at least Lollipop
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                // get the center for the clipping circle
-                val cx = tick.width / 2
-                val cy = tick.height / 2
-
-                // get the final radius for the clipping circle
-                val finalRadius = Math.hypot(cx.toDouble(), cy.toDouble()).toFloat()
-
-                // create the animator for this view (the start radius is zero)
-                val anim = ViewAnimationUtils.createCircularReveal(tick, cx, cy, 0f, finalRadius)
-                // make the view visible and start the animation
-                tick.visibility = View.VISIBLE
-                anim.duration = 2500
-                anim.start()
-            } else {
-                // set the view to invisible without a circular reveal animation below Lollipop
-                tick.visibility = View.INVISIBLE
-            }
-        }
     }
 }

@@ -38,7 +38,7 @@ public class MessengerFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_users, container, false);
+        return inflater.inflate(R.layout.fragment_chat, container, false);
     }
 
     @Override
@@ -132,10 +132,12 @@ public class MessengerFragment extends Fragment {
         if(type == 1) {
             lp2.gravity = Gravity.LEFT;
             textView.setBackgroundResource(R.drawable.bubble_in);
+            textView.setTextColor(getResources().getColor(R.color.colorWhite));
         }
         else{
             lp2.gravity = Gravity.RIGHT;
             textView.setBackgroundResource(R.drawable.bubble_out);
+            textView.setTextColor(getResources().getColor(R.color.colorWhite));
         }
         textView.setLayoutParams(lp2);
         layout.addView(textView);

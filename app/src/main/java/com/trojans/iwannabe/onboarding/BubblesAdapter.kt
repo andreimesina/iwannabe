@@ -51,10 +51,13 @@ class BubblesAdapter(private val context: Context, private val domains: List<Dom
             name.contains(Domains.Programming.name) -> R.drawable.programming
             name.contains(Domains.Acting.name) -> R.drawable.acting
             name.contains(Domains.Music.name) -> R.drawable.music
-//            name.contains("Video games") ->
-//            name.contains("Reading books") ->
-//            name.contains("Cooking") ->
-//                name.contains("Party") ->
+            name.contains("Video games") -> R.drawable.video_games
+            name.contains("Reading books") -> R.drawable.reading
+            name.contains("Cooking") -> R.drawable.cooking
+            name.contains("Party") -> R.drawable.party
+            name.contains("Very active") -> R.drawable.very_active
+            name.contains("Medium") -> R.drawable.active
+            name.contains("A little") -> R.drawable.sedentar
             else -> R.drawable.question
         }
     }
