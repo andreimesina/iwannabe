@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".auth.LoginActivity"></activity>
-        <activity android:name=".auth.SignUp"></activity>
+        <activity android:name=".auth.SignUpActivity"></activity>
         <activity android:name=".home.HomeFragment"></activity>
     </application>
 
